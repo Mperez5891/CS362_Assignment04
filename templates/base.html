@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+	integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<title>{% block title %}{% endblock %}</title>
+	</head>
+	<body>
+		{% block content %}
+		{% endblock %}
+
+		<h1>Send Foodz</h1>
+		
+		<form action = "#" method = "post" class="row g-3">
+		  <div class="col-12">
+		    <label for="inputKeyword" class="form-label">Keyword</label>
+		    <input type="text" class="form-control" id="inputKeyword" name = "inputKeyword" placeholder="Chicken, coffee, etc...">
+		  </div>
+		  <div class="col-md-6">
+		    <label for="inputCity" class="form-label">City</label>
+		    <input type="text" class="form-control" id="inputCity" name = "inputCity">
+		  </div>
+		  <div class="col-md-4">
+		    <label for="inputState" class="form-label">Distance(Miles)</label>
+		    <select id="inputState" class="form-select" name = "inputState">
+		      <option selected>Choose...</option>
+		      <option>1</option>
+		      <option>3</option>
+		      <option>5</option>
+		      <option>10</option>
+		      <option>15</option>
+		      <option>25</option>
+		    </select>
+		  </div>
+		  <div class="col-12">
+		    <button type = "submit" value = "submit" class = "btn btn-primary">Search</button>
+		  </div>
+		</form>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" 
+		crossorigin="anonymous"></script>
+	</body>
+</html>
